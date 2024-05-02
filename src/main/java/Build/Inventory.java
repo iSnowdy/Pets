@@ -5,12 +5,9 @@ import java.util.List;
 
 public class Inventory {
     private final List<Pets> petsList;
-
-
     public Inventory() {
         this.petsList = new ArrayList<Pets>();
     }
-
 
     public String getPetType(Pets pets) { // Instance of returns boolean
         if (pets instanceof Dog) {
@@ -45,7 +42,9 @@ public class Inventory {
     }
 
     public void showAllPets() {
-
+        for (int i = 0; i < this.petsList.size(); i ++) {
+            showIndividualData(i);
+        }
     }
 
     public void insertPet(Pets pet){
