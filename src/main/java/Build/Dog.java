@@ -6,7 +6,7 @@ public class Dog extends Pets {
     private String breed;
     private int ticks;
 
-    public Dog(String petName, int petAge, String dateOfBirth) {
+    public Dog(String petName, int petAge, String dateOfBirth, String breed, int ticks) {
         super(petName, petAge, dateOfBirth);
         this.breed = breed;
         this.ticks = ticks;
